@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class dp1077 {
 	static int n, w;
-	static int[][] d = new int[10001][1001];
+	static int[][] d = new int[10001][5];
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
