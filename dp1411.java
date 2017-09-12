@@ -1,3 +1,8 @@
+/*
+ * 두 줄로 타일 깔기
+ * http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=687&sca=3050
+ */
+
 package dynamic_programming1;
 
 import java.util.Scanner;
@@ -10,29 +15,29 @@ public class dp1411 {
 		Scanner sc = new Scanner(System.in);
 		d[1] = 1;
 		d[2] = 3;
-		int num = sc.nextInt();
-		System.out.println(dp1411(num));
+		int N = sc.nextInt();
+		System.out.println(dp1411(N));
 	}
 
-	// public static int tiling(int n) {
-	// if (d[n] > 0)
-	// return d[n];
-	// if (n == 1)
+	// public static int tiling(int N) {
+	// if (d[N] > 0)
+	// return d[N];
+	// if (N == 1)
 	// return 1;
-	// if (n == 2)
+	// if (N == 2)
 	// return 3;
-	// d[n] = tiling(n - 1) + 2 * tiling(n - 2);
-	// d[n] %= mod;
-	// return d[n];
+	// d[N] = tiling(N - 1) + 2 * tiling(N - 2);
+	// d[N] %= mod;
+	// return d[N];
 	// }
 
-	public static int dp1411(int n) {
-		if (d[n] > 0)
-			return d[n];
-		for (int i = 3; i <= n; i++) {
+	public static int dp1411(int N) {
+		if (d[N] > 0)
+			return d[N];
+		for (int i = 3; i <= N; i++) {
 			d[i] = d[i - 1] + 2 * d[i - 2];
 			d[i] %= mod;
 		}
-		return d[n];
+		return d[N];
 	}
 }
