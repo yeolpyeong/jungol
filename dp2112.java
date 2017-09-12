@@ -1,3 +1,8 @@
+/*
+ * 세 줄로 타일 깔기
+ * http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1374&sca=3050
+ */
+
 package dynamic_programming1;
 
 import java.util.Scanner;
