@@ -1,3 +1,8 @@
+/*
+ * 최장 공통 부분수열
+ * http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=503&sca=3050
+ */
+
 package dynamic_programming1;
 
 import java.util.Scanner;
