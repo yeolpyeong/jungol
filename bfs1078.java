@@ -1,5 +1,5 @@
 /*
- * 1078 : 저글링 방사능 오염
+ * 저글링 방사능 오염
  * http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=358&sca=3040
  */
 
