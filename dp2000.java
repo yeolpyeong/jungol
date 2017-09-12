@@ -1,39 +1,44 @@
+/*
+ * 동전 교환
+ * http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1273&sca=3050
+ */
+
 package dynamic_programming1;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class dp2000 {
-	static int n, w;
+	static int N, W;
 	static int[][] d = new int[11][64001];
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt();
+		N = sc.nextInt();
 		Arrays.fill(d[0], 64001);
-		int[] N = new int[n + 1];
-		for (int i = 1; i <= n; i++) {
-			N[i] = sc.nextInt();
+		int[] NN = new int[N + 1];
+		for (int i = 1; i <= N; i++) {
+			NN[i] = sc.nextInt();
 		}
-		w = sc.nextInt();
-		System.out.println(dp2000(N));
+		W = sc.nextInt();
+		System.out.println(dp2000(NN));
 	}
 
-	public static String dp2000(int[] N) {
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= w; j++) {
+	public static String dp2000(int[] NN) {
+		for (int i = 1; i <= N; i++) {
+			for (int j = 1; j <= W; j++) {
 				d[i][j] = d[i - 1][j];
-				if (j - N[i] >= 0 && d[i][j] > d[i][j - N[i]] + 1) {
-					d[i][j] = d[i][j - N[i]] + 1;
+				if (j - NN[i] >= 0 && d[i][j] > d[i][j - NN[i]] + 1) {
+					d[i][j] = d[i][j - NN[i]] + 1;
 				}
 				// System.out.println("(" + i + ", " + j + "): " + d[i][j]);
 			}
 		}
 
-		if (d[n][w] == 64001) {
+		if (d[N][W] == 64001) {
 			return "impossible";
 		} else {
-			return d[n][w] + "";
+			return d[N][W] + "";
 		}
 	}
 }
