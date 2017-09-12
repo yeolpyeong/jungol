@@ -48,9 +48,6 @@ public class bfs1078 {
 	}
 
 	public static void bfs1078(int[][] d, Queue<int[]> q) {
-		if (q.isEmpty())
-			return;
-
 		while (!q.isEmpty()) {
 			int[] turn = q.poll();
 			int y = turn[0];
@@ -69,7 +66,6 @@ public class bfs1078 {
 				}
 			}
 		}
-		bfs1078(d, q);
 	}
 
 	public static boolean inRange(int y, int x) {
