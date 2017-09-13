@@ -30,6 +30,7 @@ public class bfs1078 {
 				d[i][j] = Character.getNumericValue(line[j - 1]);
 			}
 		}
+		
 		X = sc.nextInt();
 		Y = sc.nextInt();
 
