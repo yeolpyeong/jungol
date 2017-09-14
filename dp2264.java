@@ -27,6 +27,6 @@ public class dp2264 {
 			}
 		}
 		
-		System.out.println(d[N][K]%mod);
+		System.out.println(d[N][K]);
 	}
 }
