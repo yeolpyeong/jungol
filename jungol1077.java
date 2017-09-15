@@ -7,7 +7,7 @@ package dynamic_programming1;
 
 import java.util.Scanner;
 
-public class dp1077 {
+public class jungol1077 {
 	static int N, W;
 	static int[][] d = new int[10001][1001];
 
@@ -21,10 +21,10 @@ public class dp1077 {
 			Wi[i] = sc.nextInt();
 			Pi[i] = sc.nextInt();
 		}
-		System.out.println(dp1077(Wi, Pi));
+		System.out.println(jungol1077(Wi, Pi));
 	}
 
-	public static int dp1077(int[] Wi, int[] Pi) {
+	public static int jungol1077(int[] Wi, int[] Pi) {
 		for (int i = 1; i <= W; i++) {
 			for (int j = 1; j <= N; j++) {
 				d[i][j] = d[i][j - 1];
