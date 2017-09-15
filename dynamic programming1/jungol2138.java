@@ -14,6 +14,7 @@ public class jungol2138 {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int m = sc.nextInt();
+		
 		d[0][15] = 1;
 		for (int i = 1; i <= n; i++) {
 			d[i][0] = d[i - 1][15] % m;
