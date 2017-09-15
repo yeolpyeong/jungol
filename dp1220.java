@@ -7,7 +7,7 @@ package dynamic_programming1;
 
 import java.util.Scanner;
 
-public class dp1220 {
+public class jungol1220 {
 	static int[][] lcs = new int[1001][1001];
 
 	public static void main(String[] args) {
@@ -16,10 +16,10 @@ public class dp1220 {
 		String s2 = sc.next();
 		String[] l1 = s1.split("");
 		String[] l2 = s2.split("");
-		System.out.println(dp1220(l1, l2));
+		System.out.println(jungol1220(l1, l2));
 	}
 
-	public static int dp1220(String[] l1, String[] l2) {
+	public static int jungol1220(String[] l1, String[] l2) {
 		for (int i = 1; i <= l1.length; i++) {
 			for (int j = 1; j <= l2.length; j++) {
 				if (l1[i - 1].equals(l2[j - 1])) {
