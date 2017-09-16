@@ -1,6 +1,7 @@
 jungol(http://www.jungol.co.kr/)
 
 compiler: java-8-openjdk-amd64
+
  
 bactraking1: 1840, 1889
 
