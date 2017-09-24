@@ -81,7 +81,7 @@ public class jungol1695 {
 		c++;
 		d2[x][y] = 1;
 //		d2[x][y] = n;
-		check(x - 1, y);
+		check(x - 1, y); 
 		check(x + 1, y);
 		check(x, y - 1);
 		check(x, y + 1);
