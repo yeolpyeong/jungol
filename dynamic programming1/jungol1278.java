@@ -1,5 +1,5 @@
 /*
- * 배낭 채우기2
+ * 배낭채우기2 
  * http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=561&sca=3050
  */
 
