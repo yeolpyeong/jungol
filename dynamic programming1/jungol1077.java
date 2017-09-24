@@ -1,5 +1,5 @@
 /*
- * 배낭 채우기1
+ * 배낭채우기1
  * http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=357&sca=3050 
  */
 
@@ -39,4 +39,4 @@ public class jungol1077 {
 		}
 		return d[W][N];
 	}
-}
+} 
