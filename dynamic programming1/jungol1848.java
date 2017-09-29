@@ -16,15 +16,13 @@ public class jungol1848 {
 		int M = sc.nextInt();
 		int res = 1;
 		int[] s = new int[N + 2];
-		s[0] = 0;
 		for (int i = 1; i <= M; i++) {
 			s[i] = sc.nextInt();
 		}
 		s[M + 1] = N + 1;
-		int[] t = new int[M + 1];
+		
 		for (int i = 0; i < M + 1; i++) {
-			t[i] = s[i + 1] - s[i];
-			res *= fivonacci(t[i]);
+			res *= fivonacci(s[i + 1] - s[i]);
 		}
 		System.out.println(res);
 	}
