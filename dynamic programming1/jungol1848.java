@@ -35,5 +35,5 @@ public class jungol1848 {
 			return 1;
 		else
 			return d[N] = fivonacci(N - 2) + fivonacci(N - 1);
-	} 
+	}
 }
